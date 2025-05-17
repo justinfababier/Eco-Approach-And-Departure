@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.11" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="3.5.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_pcap.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_pcap.pck]]></Relative></File>
+    <File Version="4.4.7"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
+    <File Version="1.0.1"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_v2x-main/Package/Windows/RTMaps_V2X.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_v2x-main/Package/Windows/RTMaps_V2X.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.17" x="1776" y="200" z="0">
+    <Input LongName="DataViewer_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_1.x" Type="1">478</Property>
+    <Property LongName="DataViewer_1.y" Type="1">237</Property>
+    <Property LongName="DataViewer_1.width" Type="1">530</Property>
+    <Property LongName="DataViewer_1.height" Type="1">420</Property>
+    <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.nbInputs" Type="1">1</Property>
+    <Property LongName="DataViewer_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[1|MapMatcher.distance_to_arrival;0|Info:MapMatcher.distance_to_arrival;1|Data:MapMatcher.distance_to_arrival]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="DataViewer_2" Model="DataViewer" Version="2.0.17" x="1424" y="696" z="0">
+    <Input LongName="DataViewer_2.input_0" Name="input_0">
+      <Property LongName="DataViewer_2.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_1" Name="input_1">
+      <Property LongName="DataViewer_2.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_2" Name="input_2">
+      <Property LongName="DataViewer_2.input_2.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_2.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_3" Name="input_3">
+      <Property LongName="DataViewer_2.input_3.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_3.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_2.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_2.run" Type="0">true</Property>
+    <Property LongName="DataViewer_2.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_2.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_2.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_2.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_2.x" Type="1">350</Property>
+    <Property LongName="DataViewer_2.y" Type="1">218</Property>
+    <Property LongName="DataViewer_2.width" Type="1">530</Property>
+    <Property LongName="DataViewer_2.height" Type="1">420</Property>
+    <Property LongName="DataViewer_2.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.nbInputs" Type="1">4</Property>
+    <Property LongName="DataViewer_2.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_2.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_2.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_2.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_2.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_2.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="DataViewer_2.expandedState" Type="3" SubType="128"><![CDATA[1|J2735Decoder_2.status;0|Info:J2735Decoder_2.status;1|Data:J2735Decoder_2.status;1|J2735Decoder_2.timeStamp;0|Info:J2735Decoder_2.timeStamp;1|Data:J2735Decoder_2.timeStamp;0|;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_2.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_2.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Float_constants_generator_1" Model="Float_constants_generator" Version="2.2" x="1296" y="8" z="0">
+    <Output LongName="Float_constants_generator_1.output" Name="output">
+      <Property LongName="Float_constants_generator_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Float_constants_generator_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Float_constants_generator_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Float_constants_generator_1.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Float_constants_generator_1.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_1.vectorSize" Type="1">1</Property>
+    <Property LongName="Float_constants_generator_1.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="Float_constants_generator_1.value_1" Type="2">8.57528</Property>
+    <Property LongName="Float_constants_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_1.priority" Type="1">128</Property>
+    <Property LongName="Float_constants_generator_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="Float_constants_generator_2" Model="Float_constants_generator" Version="2.2" x="1296" y="104" z="0">
+    <Output LongName="Float_constants_generator_2.output" Name="output">
+      <Property LongName="Float_constants_generator_2.output.subsampling" Type="1">1</Property>
+      <Property LongName="Float_constants_generator_2.output.fifosize" Type="1">16</Property>
+      <Property LongName="Float_constants_generator_2.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Float_constants_generator_2.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Float_constants_generator_2.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_2.vectorSize" Type="1">1</Property>
+    <Property LongName="Float_constants_generator_2.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="Float_constants_generator_2.value_1" Type="2">49.8475</Property>
+    <Property LongName="Float_constants_generator_2.threaded" Type="0">true</Property>
+    <Property LongName="Float_constants_generator_2.priority" Type="1">128</Property>
+    <Property LongName="Float_constants_generator_2.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="IEEE1609dot2Decoder_1" Model="IEEE1609dot2Decoder" Version="1.0.0" x="456" y="104" z="0">
+    <Input LongName="IEEE1609dot2Decoder_1.i_data" Name="i_data">
+      <Property LongName="IEEE1609dot2Decoder_1.i_data.readerType" Type="1">0</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.i_data.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="IEEE1609dot2Decoder_1.status" Name="status">
+      <Property LongName="IEEE1609dot2Decoder_1.status.subsampling" Type="1">1</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.status.fifosize" Type="1">16</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.status.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="IEEE1609dot2Decoder_1.protocolVersion" Name="protocolVersion">
+      <Property LongName="IEEE1609dot2Decoder_1.protocolVersion.subsampling" Type="1">1</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.protocolVersion.fifosize" Type="1">16</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.protocolVersion.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="IEEE1609dot2Decoder_1.o_data" Name="o_data">
+      <Property LongName="IEEE1609dot2Decoder_1.o_data.subsampling" Type="1">1</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.o_data.fifosize" Type="1">16</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.o_data.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="IEEE1609dot2Decoder_1.max_output_data_size" Type="1">1024</Property>
+    <Property LongName="IEEE1609dot2Decoder_1.threaded" Type="0">true</Property>
+    <Property LongName="IEEE1609dot2Decoder_1.priority" Type="1">128</Property>
+    <Property LongName="IEEE1609dot2Decoder_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="J2735_MapData_Decoder" Model="J2735Decoder" Version="1.0.1" x="1000" y="120" z="0">
+    <Input LongName="J2735_MapData_Decoder.data" Name="data">
+      <Property LongName="J2735_MapData_Decoder.data.readerType" Type="1">0</Property>
+      <Property LongName="J2735_MapData_Decoder.data.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="J2735_MapData_Decoder.status" Name="status">
+      <Property LongName="J2735_MapData_Decoder.status.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.status.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.status.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.timeStamp" Name="timeStamp">
+      <Property LongName="J2735_MapData_Decoder.timeStamp.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.timeStamp.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.timeStamp.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.layerType" Name="layerType">
+      <Property LongName="J2735_MapData_Decoder.layerType.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.layerType.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.layerType.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.layerTypeLen" Name="layerTypeLen">
+      <Property LongName="J2735_MapData_Decoder.layerTypeLen.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.layerTypeLen.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.layerTypeLen.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.num_Intersections" Name="num_Intersections">
+      <Property LongName="J2735_MapData_Decoder.num_Intersections.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.num_Intersections.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.num_Intersections.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_num_lanes" Name="Intersection_1_num_lanes">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_num_lanes.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_num_lanes.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_num_lanes.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.intersectionID_MapData" Name="intersectionID_MapData">
+      <Property LongName="J2735_MapData_Decoder.intersectionID_MapData.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.intersectionID_MapData.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.intersectionID_MapData.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.longitude_refPoint" Name="longitude_refPoint">
+      <Property LongName="J2735_MapData_Decoder.longitude_refPoint.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.longitude_refPoint.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.longitude_refPoint.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.latitude_refPoint" Name="latitude_refPoint">
+      <Property LongName="J2735_MapData_Decoder.latitude_refPoint.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.latitude_refPoint.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.latitude_refPoint.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_ID" Name="Intersection_1_Lane_1_ID">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_ID.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_ID.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_ID.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_directionalUse" Name="Intersection_1_Lane_1_directionalUse">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_directionalUse.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_directionalUse.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_directionalUse.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_num_nodes" Name="Intersection_1_Lane_1_num_nodes">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_num_nodes.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_num_nodes.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_num_nodes.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_1_delta_Lon" Name="Intersection_1_Lane_1_Node_1_delta_Lon">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_1_delta_Lon.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_1_delta_Lon.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_1_delta_Lon.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_1_delta_Lat" Name="Intersection_1_Lane_1_Node_1_delta_Lat">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_1_delta_Lat.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_1_delta_Lat.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_1_delta_Lat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_2_delta_Lon" Name="Intersection_1_Lane_1_Node_2_delta_Lon">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_2_delta_Lon.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_2_delta_Lon.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_2_delta_Lon.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_2_delta_Lat" Name="Intersection_1_Lane_1_Node_2_delta_Lat">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_2_delta_Lat.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_2_delta_Lat.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_2_delta_Lat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_3_delta_Lon" Name="Intersection_1_Lane_1_Node_3_delta_Lon">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_3_delta_Lon.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_3_delta_Lon.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_3_delta_Lon.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_3_delta_Lat" Name="Intersection_1_Lane_1_Node_3_delta_Lat">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_3_delta_Lat.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_3_delta_Lat.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_3_delta_Lat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_4_delta_Lon" Name="Intersection_1_Lane_1_Node_4_delta_Lon">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_4_delta_Lon.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_4_delta_Lon.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_4_delta_Lon.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_4_delta_Lat" Name="Intersection_1_Lane_1_Node_4_delta_Lat">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_4_delta_Lat.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_4_delta_Lat.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_1_Node_4_delta_Lat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_ID" Name="Intersection_1_Lane_2_ID">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_ID.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_ID.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_ID.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_directionalUse" Name="Intersection_1_Lane_2_directionalUse">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_directionalUse.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_directionalUse.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_directionalUse.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_num_nodes" Name="Intersection_1_Lane_2_num_nodes">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_num_nodes.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_num_nodes.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_num_nodes.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_1_delta_Lon" Name="Intersection_1_Lane_2_Node_1_delta_Lon">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_1_delta_Lon.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_1_delta_Lon.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_1_delta_Lon.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_1_delta_Lat" Name="Intersection_1_Lane_2_Node_1_delta_Lat">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_1_delta_Lat.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_1_delta_Lat.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_1_delta_Lat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_2_delta_Lon" Name="Intersection_1_Lane_2_Node_2_delta_Lon">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_2_delta_Lon.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_2_delta_Lon.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_2_delta_Lon.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_2_delta_Lat" Name="Intersection_1_Lane_2_Node_2_delta_Lat">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_2_delta_Lat.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_2_delta_Lat.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_2_delta_Lat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_3_delta_Lon" Name="Intersection_1_Lane_2_Node_3_delta_Lon">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_3_delta_Lon.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_3_delta_Lon.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_3_delta_Lon.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_3_delta_Lat" Name="Intersection_1_Lane_2_Node_3_delta_Lat">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_3_delta_Lat.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_3_delta_Lat.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_3_delta_Lat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_4_delta_Lon" Name="Intersection_1_Lane_2_Node_4_delta_Lon">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_4_delta_Lon.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_4_delta_Lon.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_4_delta_Lon.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_4_delta_Lat" Name="Intersection_1_Lane_2_Node_4_delta_Lat">
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_4_delta_Lat.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_4_delta_Lat.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_MapData_Decoder.Intersection_1_Lane_2_Node_4_delta_Lat.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="J2735_MapData_Decoder.message_type" Type="4"><![CDATA[19|2|SAE_J2735_MessageFrame|SAE_J2735_BSM|SAE_J2735_MAP|SAE_J2735_SPAT|SAE_J2735_CommonSafetyRequest|SAE_J2735_EmergencyVehicleAlert|SAE_J2735_IntersectionCollision|SAE_J2735_NMEAcorrections|SAE_J2735_ProbeDataManagement|SAE_J2735_ProbeVehicleData|SAE_J2735_RoadSideAlert|SAE_J2735_RTCMcorrections|SAE_J2735_SignalRequestMessage|SAE_J2735_SignalStatusMessage|SAE_J2735_TravelerInformation|SAE_J2735_PersonalSafetyMessage|SAE_J2735_VehicleSafetyExtensions|SAE_J2735_SpecialVehicleExtensions|SAE_J2735_SupplementalVehicleExtensions]]></Property>
+    <Property LongName="J2735_MapData_Decoder.message_template" Type="3" SubType="16"><![CDATA[C:/Users/hungn/OneDrive - email.ucr.edu/Documents/EcoCAR_RtmapV2x/.EAD RTMaps Code/.EAD RTMaps Code/xpl_templates/J2735_MAP - Hung.xpl]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/xpl_templates/J2735_MAP - Hung.xpl]]></Relative></Property>
+    <Property LongName="J2735_MapData_Decoder.decode_buffer_size" Type="1">16384</Property>
+    <Property LongName="J2735_MapData_Decoder.threaded" Type="0">true</Property>
+    <Property LongName="J2735_MapData_Decoder.priority" Type="1">128</Property>
+    <Property LongName="J2735_MapData_Decoder.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="J2735Decoder_1" Model="J2735Decoder" Version="1.0.1" x="640" y="104" z="0">
+    <Input LongName="J2735Decoder_1.data" Name="data">
+      <Property LongName="J2735Decoder_1.data.readerType" Type="1">0</Property>
+      <Property LongName="J2735Decoder_1.data.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="J2735Decoder_1.status" Name="status">
+      <Property LongName="J2735Decoder_1.status.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_1.status.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_1.status.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_1.messageId" Name="messageId">
+      <Property LongName="J2735Decoder_1.messageId.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_1.messageId.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_1.messageId.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_1.value" Name="value">
+      <Property LongName="J2735Decoder_1.value.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_1.value.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_1.value.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_1.valueLen" Name="valueLen">
+      <Property LongName="J2735Decoder_1.valueLen.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_1.valueLen.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_1.valueLen.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="J2735Decoder_1.message_type" Type="4"><![CDATA[19|0|SAE_J2735_MessageFrame|SAE_J2735_BSM|SAE_J2735_MAP|SAE_J2735_SPAT|SAE_J2735_CommonSafetyRequest|SAE_J2735_EmergencyVehicleAlert|SAE_J2735_IntersectionCollision|SAE_J2735_NMEAcorrections|SAE_J2735_ProbeDataManagement|SAE_J2735_ProbeVehicleData|SAE_J2735_RoadSideAlert|SAE_J2735_RTCMcorrections|SAE_J2735_SignalRequestMessage|SAE_J2735_SignalStatusMessage|SAE_J2735_TravelerInformation|SAE_J2735_PersonalSafetyMessage|SAE_J2735_VehicleSafetyExtensions|SAE_J2735_SpecialVehicleExtensions|SAE_J2735_SupplementalVehicleExtensions]]></Property>
+    <Property LongName="J2735Decoder_1.message_template" Type="3" SubType="16"><![CDATA[C:/Users/hungn/OneDrive - email.ucr.edu/Documents/EcoCAR_RtmapV2x/.EAD RTMaps Code/.EAD RTMaps Code/xpl_templates/J2735_MessageFrame.xpl]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/xpl_templates/J2735_MessageFrame.xpl]]></Relative></Property>
+    <Property LongName="J2735Decoder_1.decode_buffer_size" Type="1">16384</Property>
+    <Property LongName="J2735Decoder_1.threaded" Type="0">true</Property>
+    <Property LongName="J2735Decoder_1.priority" Type="1">128</Property>
+    <Property LongName="J2735Decoder_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="J2735Decoder_2" Model="J2735Decoder" Version="1.0.1" x="1008" y="680" z="0">
+    <Input LongName="J2735Decoder_2.data" Name="data">
+      <Property LongName="J2735Decoder_2.data.readerType" Type="1">0</Property>
+      <Property LongName="J2735Decoder_2.data.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="J2735Decoder_2.status" Name="status">
+      <Property LongName="J2735Decoder_2.status.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.status.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.status.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.timeStamp" Name="timeStamp">
+      <Property LongName="J2735Decoder_2.timeStamp.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.timeStamp.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.timeStamp.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.num_Intersections" Name="num_Intersections">
+      <Property LongName="J2735Decoder_2.num_Intersections.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.num_Intersections.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.num_Intersections.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.intersectionID_SPaT" Name="intersectionID_SPaT">
+      <Property LongName="J2735Decoder_2.intersectionID_SPaT.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.intersectionID_SPaT.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.intersectionID_SPaT.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_num_States" Name="Intersection_1_num_States">
+      <Property LongName="J2735Decoder_2.Intersection_1_num_States.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_num_States.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_num_States.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_signalGroup" Name="Intersection_1_MovementState_1_signalGroup">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_signalGroup.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_signalGroup.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_signalGroup.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_has_MovementEvent" Name="Intersection_1_MovementState_1_has_MovementEvent">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_has_MovementEvent.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_has_MovementEvent.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_has_MovementEvent.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_eventState" Name="Intersection_1_MovementState_1_MovementEvent_eventState">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_eventState.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_eventState.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_eventState.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_eventStateLen" Name="Intersection_1_MovementState_1_MovementEvent_eventStateLen">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_eventStateLen.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_eventStateLen.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_eventStateLen.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_startTime" Name="Intersection_1_MovementState_1_MovementEvent_startTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_startTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_startTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_startTime.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_minEndTime" Name="Intersection_1_MovementState_1_MovementEvent_minEndTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_minEndTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_minEndTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_minEndTime.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_likelyTime" Name="Intersection_1_MovementState_1_MovementEvent_likelyTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_likelyTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_likelyTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_likelyTime.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_maxEndTime" Name="Intersection_1_MovementState_1_MovementEvent_maxEndTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_maxEndTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_maxEndTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_maxEndTime.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_confidence" Name="Intersection_1_MovementState_1_MovementEvent_confidence">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_confidence.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_confidence.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_confidence.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_nextTime" Name="Intersection_1_MovementState_1_MovementEvent_nextTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_nextTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_nextTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_1_MovementEvent_nextTime.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_signalGroup" Name="Intersection_1_MovementState_2_signalGroup">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_signalGroup.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_signalGroup.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_signalGroup.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_has_MovementEvent" Name="Intersection_1_MovementState_2_has_MovementEvent">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_has_MovementEvent.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_has_MovementEvent.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_has_MovementEvent.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_eventState" Name="Intersection_1_MovementState_2_MovementEvent_eventState">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_eventState.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_eventState.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_eventState.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_eventStateLen" Name="Intersection_1_MovementState_2_MovementEvent_eventStateLen">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_eventStateLen.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_eventStateLen.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_eventStateLen.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_startTime" Name="Intersection_1_MovementState_2_MovementEvent_startTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_startTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_startTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_startTime.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_minEndTime" Name="Intersection_1_MovementState_2_MovementEvent_minEndTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_minEndTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_minEndTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_minEndTime.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_likelyTime" Name="Intersection_1_MovementState_2_MovementEvent_likelyTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_likelyTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_likelyTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_likelyTime.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_maxEndTime" Name="Intersection_1_MovementState_2_MovementEvent_maxEndTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_maxEndTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_maxEndTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_maxEndTime.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_confidence" Name="Intersection_1_MovementState_2_MovementEvent_confidence">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_confidence.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_confidence.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_confidence.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_nextTime" Name="Intersection_1_MovementState_2_MovementEvent_nextTime">
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_nextTime.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_nextTime.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_2.Intersection_1_MovementState_2_MovementEvent_nextTime.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="J2735Decoder_2.message_type" Type="4"><![CDATA[19|3|SAE_J2735_MessageFrame|SAE_J2735_BSM|SAE_J2735_MAP|SAE_J2735_SPAT|SAE_J2735_CommonSafetyRequest|SAE_J2735_EmergencyVehicleAlert|SAE_J2735_IntersectionCollision|SAE_J2735_NMEAcorrections|SAE_J2735_ProbeDataManagement|SAE_J2735_ProbeVehicleData|SAE_J2735_RoadSideAlert|SAE_J2735_RTCMcorrections|SAE_J2735_SignalRequestMessage|SAE_J2735_SignalStatusMessage|SAE_J2735_TravelerInformation|SAE_J2735_PersonalSafetyMessage|SAE_J2735_VehicleSafetyExtensions|SAE_J2735_SpecialVehicleExtensions|SAE_J2735_SupplementalVehicleExtensions]]></Property>
+    <Property LongName="J2735Decoder_2.message_template" Type="3" SubType="16"><![CDATA[C:/Users/hungn/OneDrive - email.ucr.edu/Documents/EcoCAR_RtmapV2x/.EAD RTMaps Code/.EAD RTMaps Code/xpl_templates/J2735_SPAT.xpl]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/xpl_templates/J2735_SPAT.xpl]]></Relative></Property>
+    <Property LongName="J2735Decoder_2.decode_buffer_size" Type="1">16384</Property>
+    <Property LongName="J2735Decoder_2.threaded" Type="0">true</Property>
+    <Property LongName="J2735Decoder_2.priority" Type="1">128</Property>
+    <Property LongName="J2735Decoder_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="MapMatcher" Model="PythonBridge" Version="4.4.7" x="1552" y="200" z="0">
+    <Input LongName="MapMatcher.longitude_gps" Name="longitude_gps">
+      <Property LongName="MapMatcher.longitude_gps.readerType" Type="1">0</Property>
+      <Property LongName="MapMatcher.longitude_gps.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.latitude_gps" Name="latitude_gps">
+      <Property LongName="MapMatcher.latitude_gps.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.latitude_gps.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.longitude_refPoint" Name="longitude_refPoint">
+      <Property LongName="MapMatcher.longitude_refPoint.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.longitude_refPoint.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.latitude_refPoint" Name="latitude_refPoint">
+      <Property LongName="MapMatcher.latitude_refPoint.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.latitude_refPoint.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_ID" Name="Intersection_1_Lane_1_ID">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_ID.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_ID.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_directionalUse" Name="Intersection_1_Lane_1_directionalUse">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_directionalUse.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_directionalUse.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_lon" Name="Intersection_1_Lane_1_Node_1_delta_lon">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_lon.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_lon.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_lat" Name="Intersection_1_Lane_1_Node_1_delta_lat">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_lat.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_lat.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_lon" Name="Intersection_1_Lane_1_Node_2_delta_lon">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_lon.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_lon.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_lat" Name="Intersection_1_Lane_1_Node_2_delta_lat">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_lat.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_lat.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_lon" Name="Intersection_1_Lane_1_Node_3_delta_lon">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_lon.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_lon.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_lat" Name="Intersection_1_Lane_1_Node_3_delta_lat">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_lat.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_lat.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_lon" Name="Intersection_1_Lane_1_Node_4_delta_lon">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_lon.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_lon.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_lat" Name="Intersection_1_Lane_1_Node_4_delta_lat">
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_lat.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_lat.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_ID" Name="Intersection_1_Lane_2_ID">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_ID.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_ID.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_directionalUse" Name="Intersection_1_Lane_2_directionalUse">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_directionalUse.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_directionalUse.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_lon" Name="Intersection_1_Lane_2_Node_1_delta_lon">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_lon.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_lon.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_lat" Name="Intersection_1_Lane_2_Node_1_delta_lat">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_lat.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_lat.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_lon" Name="Intersection_1_Lane_2_Node_2_delta_lon">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_lon.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_lon.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_lat" Name="Intersection_1_Lane_2_Node_2_delta_lat">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_lat.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_lat.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_lon" Name="Intersection_1_Lane_2_Node_3_delta_lon">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_lon.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_lon.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_lat" Name="Intersection_1_Lane_2_Node_3_delta_lat">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_lat.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_lat.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_lon" Name="Intersection_1_Lane_2_Node_4_delta_lon">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_lon.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_lon.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_lat" Name="Intersection_1_Lane_2_Node_4_delta_lat">
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_lat.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_lat.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="MapMatcher.distance_to_arrival" Name="distance_to_arrival">
+      <Property LongName="MapMatcher.distance_to_arrival.subsampling" Type="1">1</Property>
+      <Property LongName="MapMatcher.distance_to_arrival.fifosize" Type="1">16</Property>
+      <Property LongName="MapMatcher.distance_to_arrival.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="MapMatcher.Lane_ID_matched" Name="Lane_ID_matched">
+      <Property LongName="MapMatcher.Lane_ID_matched.subsampling" Type="1">1</Property>
+      <Property LongName="MapMatcher.Lane_ID_matched.fifosize" Type="1">16</Property>
+      <Property LongName="MapMatcher.Lane_ID_matched.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="MapMatcher.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="MapMatcher.internalInputs" Type="3" SubType="128"><![CDATA[longitude_gps;11==#latitude_gps;11==#longitude_refPoint;11==#latitude_refPoint;11==#Intersection_1_Lane_1_ID;11==#Intersection_1_Lane_1_directionalUse;11==#Intersection_1_Lane_1_Node_1_delta_lon;11==#Intersection_1_Lane_1_Node_1_delta_lat;11==#Intersection_1_Lane_1_Node_2_delta_lon;11==#Intersection_1_Lane_1_Node_2_delta_lat;11==#Intersection_1_Lane_1_Node_3_delta_lon;11==#Intersection_1_Lane_1_Node_3_delta_lat;11==#Intersection_1_Lane_1_Node_4_delta_lon;11==#Intersection_1_Lane_1_Node_4_delta_lat;11==#Intersection_1_Lane_2_ID;11==#Intersection_1_Lane_2_directionalUse;11==#Intersection_1_Lane_2_Node_1_delta_lon;11==#Intersection_1_Lane_2_Node_1_delta_lat;11==#Intersection_1_Lane_2_Node_2_delta_lon;11==#Intersection_1_Lane_2_Node_2_delta_lat;11==#Intersection_1_Lane_2_Node_3_delta_lon;11==#Intersection_1_Lane_2_Node_3_delta_lat;11==#Intersection_1_Lane_2_Node_4_delta_lon;11==#Intersection_1_Lane_2_Node_4_delta_lat;11==]]></Property>
+    <Property LongName="MapMatcher.internalOutputs" Type="3" SubType="128"><![CDATA[distance_to_arrival;11==;0#Lane_ID_matched;8==;0]]></Property>
+    <Property LongName="MapMatcher.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="MapMatcher.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="MapMatcher.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="MapMatcher.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="MapMatcher.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="MapMatcher.pythonPID" Type="1">23248</ReadOnlyProperty>
+    <Property LongName="MapMatcher.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="MapMatcher.useNuitka" Type="0">false</Property>
+    <ReadOnlyProperty LongName="MapMatcher.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="MapMatcher.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="MapMatcher.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="MapMatcher.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="MapMatcher.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/hungn/OneDrive - email.ucr.edu/Documents/EcoCAR_RtmapV2x/.EAD RTMaps Code/.EAD RTMaps Code/Python Code/MapMatcher.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Python Code/MapMatcher.py]]></Relative></Property>
+    <Property LongName="MapMatcher.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="MapMatcher.inputsBehavior" Type="4"><![CDATA[2|1|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="MapMatcher.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="MapMatcher.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="MapMatcher.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="MapMatcher.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="MapMatcher.threaded" Type="0">true</Property>
+    <Property LongName="MapMatcher.priority" Type="1">128</Property>
+    <Property LongName="MapMatcher.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="MessageDispatcher_1" Model="MessageDispatcher" Version="1.0.0" x="840" y="120" z="0">
+    <Input LongName="MessageDispatcher_1.messageId" Name="messageId">
+      <Property LongName="MessageDispatcher_1.messageId.readerType" Type="1">0</Property>
+      <Property LongName="MessageDispatcher_1.messageId.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MessageDispatcher_1.value" Name="value">
+      <Property LongName="MessageDispatcher_1.value.readerType" Type="1">0</Property>
+      <Property LongName="MessageDispatcher_1.value.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="MessageDispatcher_1.MAP" Name="MAP">
+      <Property LongName="MessageDispatcher_1.MAP.subsampling" Type="1">1</Property>
+      <Property LongName="MessageDispatcher_1.MAP.fifosize" Type="1">16</Property>
+      <Property LongName="MessageDispatcher_1.MAP.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="MessageDispatcher_1.SPAT" Name="SPAT">
+      <Property LongName="MessageDispatcher_1.SPAT.subsampling" Type="1">1</Property>
+      <Property LongName="MessageDispatcher_1.SPAT.fifosize" Type="1">16</Property>
+      <Property LongName="MessageDispatcher_1.SPAT.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="MessageDispatcher_1.mapData" Type="0">true</Property>
+    <Property LongName="MessageDispatcher_1.signalPhaseAndTimingMessage" Type="0">true</Property>
+    <Property LongName="MessageDispatcher_1.basicSafetyMessage" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.commonSafetyRequest" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.emergencyVehicleAlert" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.intersectionCollision" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.nmeaCorrections" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.probeDataManagement" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.probeVehicleData" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.roadSideAlert" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.rtcmCorrections" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.signalRequestMessage" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.signalStatusMessage" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.travelerInformation" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.personalSafetyMessage" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.threaded" Type="0">true</Property>
+    <Property LongName="MessageDispatcher_1.priority" Type="1">128</Property>
+    <Property LongName="MessageDispatcher_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="pcap_player_1" Model="pcap_player" Version="2.1.0" x="16" y="104" z="0">
+    <Output LongName="pcap_player_1.output" Name="output">
+      <Property LongName="pcap_player_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="pcap_player_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="pcap_player_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="pcap_player_1.endOfFile" Name="endOfFile">
+      <Property LongName="pcap_player_1.endOfFile.subsampling" Type="1">1</Property>
+      <Property LongName="pcap_player_1.endOfFile.fifosize" Type="1">16</Property>
+      <Property LongName="pcap_player_1.endOfFile.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="pcap_player_1.guard_begin" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="pcap_player_1.percentage" Type="2">0</ReadOnlyProperty>
+    <Property LongName="pcap_player_1.pcapFile" Type="3" SubType="16"><![CDATA[C:/Users/hungn/OneDrive - email.ucr.edu/Documents/EcoCAR_RtmapV2x/wireshark_capture/V2X_Test_041425_Raw.pcap]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../wireshark_capture/V2X_Test_041425_Raw.pcap]]></Relative></Property>
+    <Property LongName="pcap_player_1.group_duration" Type="1" SubType="1">10000</Property>
+    <Property LongName="pcap_player_1.packets_per_group" Type="1">50</Property>
+    <Property LongName="pcap_player_1.useQuickFilter" Type="0">true</Property>
+    <Property LongName="pcap_player_1.protocolFilter" Type="4"><![CDATA[4|2||tcp|udp|icmp]]></Property>
+    <Property LongName="pcap_player_1.srcHostFilter" Type="3"><![CDATA[192.168.1.113]]></Property>
+    <Property LongName="pcap_player_1.destHostFilter" Type="3"><![CDATA[]]></Property>
+    <Property LongName="pcap_player_1.srcPortFilter" Type="3"><![CDATA[]]></Property>
+    <Property LongName="pcap_player_1.destPortFilter" Type="3"><![CDATA[]]></Property>
+    <Property LongName="pcap_player_1.guard_end" Type="0" SubType="128">true</Property>
+    <Property LongName="pcap_player_1.replay_mode" Type="4"><![CDATA[3|0|PCAP file timestamps|Immediate|Periodic]]></Property>
+    <Property LongName="pcap_player_1.timestampOffset" Type="4"><![CDATA[2|0|First timestamp in file|None]]></Property>
+    <Property LongName="pcap_player_1.threaded" Type="0">true</Property>
+    <Property LongName="pcap_player_1.priority" Type="1">128</Property>
+    <Property LongName="pcap_player_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="PCAPSplitter_1" Model="PCAPSplitter" Version="2.1.0" x="288" y="104" z="0">
+    <Input LongName="PCAPSplitter_1.input" Name="input">
+      <Property LongName="PCAPSplitter_1.input.readerType" Type="1">0</Property>
+      <Property LongName="PCAPSplitter_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="PCAPSplitter_1.oStream8" Name="oStream8">
+      <Property LongName="PCAPSplitter_1.oStream8.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.oStream8.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.oStream8.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.ipSrc" Name="ipSrc">
+      <Property LongName="PCAPSplitter_1.ipSrc.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.ipSrc.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.ipSrc.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.ipDest" Name="ipDest">
+      <Property LongName="PCAPSplitter_1.ipDest.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.ipDest.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.ipDest.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.protocol" Name="protocol">
+      <Property LongName="PCAPSplitter_1.protocol.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.protocol.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.protocol.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.portSrc" Name="portSrc">
+      <Property LongName="PCAPSplitter_1.portSrc.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.portSrc.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.portSrc.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.portDest" Name="portDest">
+      <Property LongName="PCAPSplitter_1.portDest.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.portDest.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.portDest.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.pktInfo" Name="pktInfo">
+      <Property LongName="PCAPSplitter_1.pktInfo.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.pktInfo.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.pktInfo.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.pktTs" Name="pktTs">
+      <Property LongName="PCAPSplitter_1.pktTs.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.pktTs.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.pktTs.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="PCAPSplitter_1.linkType" Type="4"><![CDATA[2|0|DLT_EN10MB|DLT_LINUX_SLL]]></Property>
+    <Property LongName="PCAPSplitter_1.fragment_handling" Type="4"><![CDATA[2|1|Reconstruct packets|Forward fragments]]></Property>
+    <Property LongName="PCAPSplitter_1.max_stored_fragments_in_MB" Type="1">2</Property>
+    <Property LongName="PCAPSplitter_1.threaded" Type="0">true</Property>
+    <Property LongName="PCAPSplitter_1.priority" Type="1">128</Property>
+    <Property LongName="PCAPSplitter_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="PythonBridge_1" Model="PythonBridge" Version="4.4.7" x="1000" y="8" z="0">
+    <Input LongName="PythonBridge_1.MAP_i" Name="MAP_i">
+      <Property LongName="PythonBridge_1.MAP_i.readerType" Type="1">0</Property>
+      <Property LongName="PythonBridge_1.MAP_i.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="PythonBridge_1.SPAT_i" Name="SPAT_i">
+      <Property LongName="PythonBridge_1.SPAT_i.readerType" Type="1">0</Property>
+      <Property LongName="PythonBridge_1.SPAT_i.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="PythonBridge_1.BSM_i" Name="BSM_i">
+      <Property LongName="PythonBridge_1.BSM_i.readerType" Type="1">0</Property>
+      <Property LongName="PythonBridge_1.BSM_i.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="PythonBridge_1.MAP_o" Name="MAP_o">
+      <Property LongName="PythonBridge_1.MAP_o.subsampling" Type="1">1</Property>
+      <Property LongName="PythonBridge_1.MAP_o.fifosize" Type="1">16</Property>
+      <Property LongName="PythonBridge_1.MAP_o.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PythonBridge_1.SPAT_o" Name="SPAT_o">
+      <Property LongName="PythonBridge_1.SPAT_o.subsampling" Type="1">1</Property>
+      <Property LongName="PythonBridge_1.SPAT_o.fifosize" Type="1">16</Property>
+      <Property LongName="PythonBridge_1.SPAT_o.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PythonBridge_1.BSM_o" Name="BSM_o">
+      <Property LongName="PythonBridge_1.BSM_o.subsampling" Type="1">1</Property>
+      <Property LongName="PythonBridge_1.BSM_o.fifosize" Type="1">16</Property>
+      <Property LongName="PythonBridge_1.BSM_o.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="PythonBridge_1.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="PythonBridge_1.internalInputs" Type="3" SubType="128"><![CDATA[MAP_i;3==#SPAT_i;3==#BSM_i;3==]]></Property>
+    <Property LongName="PythonBridge_1.internalOutputs" Type="3" SubType="128"><![CDATA[MAP_o;13==;0#SPAT_o;13==;0#BSM_o;13==;0]]></Property>
+    <Property LongName="PythonBridge_1.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="PythonBridge_1.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="PythonBridge_1.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.pythonPID" Type="1">21592</ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="PythonBridge_1.useNuitka" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PythonBridge_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="PythonBridge_1.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="PythonBridge_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/hungn/OneDrive - email.ucr.edu/Documents/EcoCAR_RtmapV2x/.EAD RTMaps Code/.EAD RTMaps Code/Python Code/MD_viewer.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Python Code/MD_viewer.py]]></Relative></Property>
+    <Property LongName="PythonBridge_1.readingPolicy" Type="4"><![CDATA[5|1|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="PythonBridge_1.timeout" Type="1" SubType="1">-1</Property>
+    <Property LongName="PythonBridge_1.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PythonBridge_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="PythonBridge_1.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="PythonBridge_1.threaded" Type="0">true</Property>
+    <Property LongName="PythonBridge_1.priority" Type="1">128</Property>
+    <Property LongName="PythonBridge_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="TextViewer_1" Model="TextViewer" Version="2.0.7" x="1152" y="8" z="0">
+    <Input LongName="TextViewer_1.input" Name="input">
+      <Property LongName="TextViewer_1.input.readerType" Type="1">0</Property>
+      <Property LongName="TextViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="TextViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="TextViewer_1.run" Type="0">true</Property>
+    <Property LongName="TextViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="TextViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="TextViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="TextViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="TextViewer_1.x" Type="1">867</Property>
+    <Property LongName="TextViewer_1.y" Type="1">133</Property>
+    <Property LongName="TextViewer_1.width" Type="1">603</Property>
+    <Property LongName="TextViewer_1.height" Type="1">314</Property>
+    <Property LongName="TextViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.background_color" Type="1" SubType="4">0</Property>
+    <Property LongName="TextViewer_1.font_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="TextViewer_1.maximumBlockCount" Type="1">0</Property>
+    <Property LongName="TextViewer_1.hexDisplay" Type="0">true</Property>
+    <Property LongName="TextViewer_1.appendLineFeedForNewData" Type="0">true</Property>
+    <Property LongName="TextViewer_1.fontSize" Type="1">10</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="TextViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="TextViewer_1.priority" Type="1">128</Property>
+    <Property LongName="TextViewer_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Connection Output="MapMatcher.distance_to_arrival" Input="DataViewer_1.input_0"/>
+  <Connection Output="PCAPSplitter_1.oStream8" Input="IEEE1609dot2Decoder_1.i_data"/>
+  <Connection Output="MessageDispatcher_1.MAP" Input="J2735_MapData_Decoder.data"/>
+  <Connection Output="IEEE1609dot2Decoder_1.o_data" Input="J2735Decoder_1.data"/>
+  <Connection Output="MessageDispatcher_1.SPAT" Input="J2735Decoder_2.data"/>
+  <Connection Output="Float_constants_generator_1.output" Input="MapMatcher.longitude_gps"/>
+  <Connection Output="Float_constants_generator_2.output" Input="MapMatcher.latitude_gps"/>
+  <Connection Output="J2735_MapData_Decoder.longitude_refPoint" Input="MapMatcher.longitude_refPoint"/>
+  <Connection Output="J2735_MapData_Decoder.latitude_refPoint" Input="MapMatcher.latitude_refPoint"/>
+  <Connection Output="J2735_MapData_Decoder.Intersection_1_Lane_1_ID" Input="MapMatcher.Intersection_1_Lane_1_ID"/>
+  <Connection Output="J2735_MapData_Decoder.Intersection_1_Lane_1_directionalUse" Input="MapMatcher.Intersection_1_Lane_1_directionalUse"/>
+  <Connection Output="J2735_MapData_Decoder.Intersection_1_Lane_2_ID" Input="MapMatcher.Intersection_1_Lane_2_ID"/>
+  <Connection Output="J2735_MapData_Decoder.Intersection_1_Lane_2_directionalUse" Input="MapMatcher.Intersection_1_Lane_2_directionalUse"/>
+  <Connection Output="J2735Decoder_1.messageId" Input="MessageDispatcher_1.messageId"/>
+  <Connection Output="J2735Decoder_1.value" Input="MessageDispatcher_1.value"/>
+  <Connection Output="pcap_player_1.output" Input="PCAPSplitter_1.input"/>
+  <Connection Output="MessageDispatcher_1.MAP" Input="PythonBridge_1.MAP_i"/>
+  <Connection Output="MessageDispatcher_1.SPAT" Input="PythonBridge_1.SPAT_i"/>
+  <Connection Output="PythonBridge_1.SPAT_o" Input="TextViewer_1.input"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="DataViewer_3_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="DataViewer_Node_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="IEEE1609dot2Decoder_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="J2735_SPaTData_Decoder_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="J2735Decoder_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="MessageDispatcher_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="pcap_player_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="PCAPSplitter_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="PythonBridge_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_3" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_4" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_5" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_6" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_4" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_5" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_6" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_7" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_8" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_9" color="0"/>
+    <ConnectionShape InstanceName="DMSI.d_0" color="0"/>
+    <ConnectionShape InstanceName="DMSI.gamma" color="0"/>
+    <ConnectionShape InstanceName="DMSI.t_0" color="0"/>
+    <ConnectionShape InstanceName="DMSI.v_c" color="0"/>
+    <ConnectionShape InstanceName="DMTG.a_max" color="0"/>
+    <ConnectionShape InstanceName="DMTG.d_0" color="0"/>
+    <ConnectionShape InstanceName="DMTG.d_max" color="0"/>
+    <ConnectionShape InstanceName="DMTG.gamma" color="0"/>
+    <ConnectionShape InstanceName="DMTG.jerk_max" color="0"/>
+    <ConnectionShape InstanceName="DMTG.scenario" color="0"/>
+    <ConnectionShape InstanceName="DMTG.t" color="0"/>
+    <ConnectionShape InstanceName="DMTG.v_c" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.current_state" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.g_e_curr" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.g_e_next" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.g_s_next" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.t0" color="0"/>
+    <ConnectionShape InstanceName="GWE.current_state" color="0"/>
+    <ConnectionShape InstanceName="GWE.g_e_curr" color="0"/>
+    <ConnectionShape InstanceName="GWE.g_e_next" color="0"/>
+    <ConnectionShape InstanceName="GWE.g_s_next" color="0"/>
+    <ConnectionShape InstanceName="GWE.t0" color="0"/>
+    <ConnectionShape InstanceName="IEEE1609dot2Decoder_1.i_data" color="0"/>
+    <ConnectionShape InstanceName="J2735_BSM_Decoder.data" color="0"/>
+    <ConnectionShape InstanceName="J2735_MapData_Decoder.data" color="0"/>
+    <ConnectionShape InstanceName="J2735_SPaTData_Decoder.data" color="0"/>
+    <ConnectionShape InstanceName="J2735Decoder_1.data" color="0"/>
+    <ConnectionShape InstanceName="J2735Decoder_2.data" color="0"/>
+    <ConnectionShape InstanceName="J2735Decoder_4.data" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.end_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.end_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_directionalUse" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_ID" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_lat" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_lon" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_lat" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_lon" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_lat" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_lon" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_3_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_lat" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_lon" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_4_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_directionalUse" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_ID" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_lat" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_lon" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_lat" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_lon" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_lat" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_lon" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_3_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_lat" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_lon" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_4_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_directionalUse" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_ID" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_Node_1_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_Node_1_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_Node_2_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_Node_2_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.latitude" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.latitude_gps" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.latitude_refPoint" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.longitude" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.longitude_gps" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.longitude_refPoint" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.start_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.start_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MD_viewer.BSM_i" color="0"/>
+    <ConnectionShape InstanceName="MD_viewer.MAP_i" color="0"/>
+    <ConnectionShape InstanceName="MD_viewer.SPAT_i" color="0"/>
+    <ConnectionShape InstanceName="MessageDispatcher_1.messageId" color="0"/>
+    <ConnectionShape InstanceName="MessageDispatcher_1.value" color="0"/>
+    <ConnectionShape InstanceName="PCAPSplitter_1.input" color="0"/>
+    <ConnectionShape InstanceName="PythonBridge_1.MAP_i" color="0"/>
+    <ConnectionShape InstanceName="PythonBridge_1.SPAT_i" color="0"/>
+    <ConnectionShape InstanceName="Splitter_1.input" color="0"/>
+    <ConnectionShape InstanceName="Splitter_2.input" color="0"/>
+    <ConnectionShape InstanceName="TextViewer_1.input" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>

@@ -1,0 +1,1045 @@
+[
+  {
+    "Current green window end": -1.0,
+    "Next green window start": 25.7,
+    "Next green window end": 75,
+    "Current Velocity:": "8.1 km/h"
+  }
+][
+  {
+    "time": 4.28,
+    "velocity_kmh": 8.1
+  },
+  {
+    "time": 4.38,
+    "velocity_kmh": 8.1
+  },
+  {
+    "time": 4.48,
+    "velocity_kmh": 8.1
+  },
+  {
+    "time": 4.58,
+    "velocity_kmh": 8.1
+  },
+  {
+    "time": 4.68,
+    "velocity_kmh": 8.1
+  },
+  {
+    "time": 4.78,
+    "velocity_kmh": 8.1
+  },
+  {
+    "time": 4.88,
+    "velocity_kmh": 8.1
+  },
+  {
+    "time": 4.98,
+    "velocity_kmh": 8.09
+  },
+  {
+    "time": 5.08,
+    "velocity_kmh": 8.09
+  },
+  {
+    "time": 5.18,
+    "velocity_kmh": 8.09
+  },
+  {
+    "time": 5.28,
+    "velocity_kmh": 8.09
+  },
+  {
+    "time": 5.38,
+    "velocity_kmh": 8.08
+  },
+  {
+    "time": 5.48,
+    "velocity_kmh": 8.08
+  },
+  {
+    "time": 5.58,
+    "velocity_kmh": 8.08
+  },
+  {
+    "time": 5.68,
+    "velocity_kmh": 8.08
+  },
+  {
+    "time": 5.78,
+    "velocity_kmh": 8.07
+  },
+  {
+    "time": 5.88,
+    "velocity_kmh": 8.07
+  },
+  {
+    "time": 5.98,
+    "velocity_kmh": 8.06
+  },
+  {
+    "time": 6.08,
+    "velocity_kmh": 8.06
+  },
+  {
+    "time": 6.18,
+    "velocity_kmh": 8.06
+  },
+  {
+    "time": 6.28,
+    "velocity_kmh": 8.05
+  },
+  {
+    "time": 6.38,
+    "velocity_kmh": 8.05
+  },
+  {
+    "time": 6.48,
+    "velocity_kmh": 8.04
+  },
+  {
+    "time": 6.58,
+    "velocity_kmh": 8.04
+  },
+  {
+    "time": 6.68,
+    "velocity_kmh": 8.03
+  },
+  {
+    "time": 6.78,
+    "velocity_kmh": 8.03
+  },
+  {
+    "time": 6.88,
+    "velocity_kmh": 8.02
+  },
+  {
+    "time": 6.98,
+    "velocity_kmh": 8.02
+  },
+  {
+    "time": 7.08,
+    "velocity_kmh": 8.01
+  },
+  {
+    "time": 7.18,
+    "velocity_kmh": 8.01
+  },
+  {
+    "time": 7.28,
+    "velocity_kmh": 8.0
+  },
+  {
+    "time": 7.38,
+    "velocity_kmh": 8.0
+  },
+  {
+    "time": 7.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 7.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 7.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 7.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 7.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 7.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 8.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 9.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 10.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 11.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 12.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 13.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 14.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 15.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 16.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 17.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 18.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 19.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 20.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 21.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 22.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 23.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 24.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 25.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 26.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 27.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 28.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.08,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.18,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.28,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.38,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.48,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.58,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.68,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.78,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.88,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 29.98,
+    "velocity_kmh": 7.99
+  },
+  {
+    "time": 30.08,
+    "velocity_kmh": 7.99
+  }
+]

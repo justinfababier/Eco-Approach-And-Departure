@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.12" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="4.5.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="current_state_inp" Model="String_constant_generator" Version="2.4" x="24" y="208" z="0">
+    <Output LongName="current_state_inp.stringValue" Name="stringValue">
+      <Property LongName="current_state_inp.stringValue.subsampling" Type="1">1</Property>
+      <Property LongName="current_state_inp.stringValue.fifosize" Type="1">16</Property>
+      <Property LongName="current_state_inp.stringValue.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="current_state_inp.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="current_state_inp.outputWhenStringChanges" Type="0">true</Property>
+    <Property LongName="current_state_inp.value" Type="3"><![CDATA[green]]></Property>
+    <Property LongName="current_state_inp.appendCarriageReturnChar" Type="0">true</Property>
+    <Property LongName="current_state_inp.appendEndOfLineChar" Type="0">true</Property>
+    <Property LongName="current_state_inp.maxStringLength" Type="1">255</Property>
+    <Property LongName="current_state_inp.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="current_state_inp.threaded" Type="0">true</Property>
+    <Property LongName="current_state_inp.priority" Type="1">128</Property>
+    <Property LongName="current_state_inp.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_2" Model="DataViewer" Version="2.1.0" x="952" y="160" z="0">
+    <Input LongName="DataViewer_2.input_0" Name="input_0">
+      <Property LongName="DataViewer_2.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_1" Name="input_1">
+      <Property LongName="DataViewer_2.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_2.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_2.run" Type="0">true</Property>
+    <Property LongName="DataViewer_2.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_2.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_2.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_2.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_2.x" Type="1">2</Property>
+    <Property LongName="DataViewer_2.y" Type="1">2</Property>
+    <Property LongName="DataViewer_2.width" Type="1">530</Property>
+    <Property LongName="DataViewer_2.height" Type="1">420</Property>
+    <Property LongName="DataViewer_2.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_2.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_2.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_2.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_2.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_2.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_2.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="DataViewer_2.expandedState" Type="3" SubType="128"><![CDATA[0|;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_2.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_2.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DMSI" Model="PythonBridge" Version="4.5.0" x="608" y="160" z="0">
+    <Input LongName="DMSI.d_0" Name="d_0">
+      <Property LongName="DMSI.d_0.readerType" Type="1">0</Property>
+      <Property LongName="DMSI.d_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMSI.v_c" Name="v_c">
+      <Property LongName="DMSI.v_c.readerType" Type="1">4</Property>
+      <Property LongName="DMSI.v_c.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMSI.t_0" Name="t_0">
+      <Property LongName="DMSI.t_0.readerType" Type="1">4</Property>
+      <Property LongName="DMSI.t_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMSI.gamma" Name="gamma">
+      <Property LongName="DMSI.gamma.readerType" Type="1">4</Property>
+      <Property LongName="DMSI.gamma.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="DMSI.scenario" Name="scenario">
+      <Property LongName="DMSI.scenario.subsampling" Type="1">1</Property>
+      <Property LongName="DMSI.scenario.fifosize" Type="1">16</Property>
+      <Property LongName="DMSI.scenario.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="DMSI.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="DMSI.internalInputs" Type="3" SubType="128"><![CDATA[d_0;6==#v_c;6==#t_0;6==#gamma;1==]]></Property>
+    <Property LongName="DMSI.internalOutputs" Type="3" SubType="128"><![CDATA[scenario;13==;0]]></Property>
+    <Property LongName="DMSI.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="DMSI.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="DMSI.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="DMSI.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="DMSI.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="DMSI.pythonPID" Type="1">8548</ReadOnlyProperty>
+    <Property LongName="DMSI.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="DMSI.useNuitka" Type="0">false</Property>
+    <Property LongName="DMSI.loadingTimeout" Type="1">8000000</Property>
+    <ReadOnlyProperty LongName="DMSI.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DMSI.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="DMSI.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="DMSI.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="DMSI.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\justi\Files\Documents\.EAD RTMaps Code\Python Code\DMSI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Python Code/DMSI.py]]></Relative></Property>
+    <Property LongName="DMSI.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="DMSI.inputsBehavior" Type="4"><![CDATA[2|1|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="DMSI.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DMSI.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="DMSI.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DMSI.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DMSI.threaded" Type="0">true</Property>
+    <Property LongName="DMSI.priority" Type="1">128</Property>
+    <Property LongName="DMSI.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DMTG" Model="PythonBridge" Version="4.5.0" x="816" y="160" z="0">
+    <Input LongName="DMTG.scenario" Name="scenario">
+      <Property LongName="DMTG.scenario.readerType" Type="1">0</Property>
+      <Property LongName="DMTG.scenario.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.d_0" Name="d_0">
+      <Property LongName="DMTG.d_0.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.d_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.v_c" Name="v_c">
+      <Property LongName="DMTG.v_c.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.v_c.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.t" Name="t">
+      <Property LongName="DMTG.t.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.t.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.gamma" Name="gamma">
+      <Property LongName="DMTG.gamma.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.gamma.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.a_max" Name="a_max">
+      <Property LongName="DMTG.a_max.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.a_max.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.d_max" Name="d_max">
+      <Property LongName="DMTG.d_max.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.d_max.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.jerk_max" Name="jerk_max">
+      <Property LongName="DMTG.jerk_max.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.jerk_max.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="DMTG.v_t" Name="v_t">
+      <Property LongName="DMTG.v_t.subsampling" Type="1">1</Property>
+      <Property LongName="DMTG.v_t.fifosize" Type="1">16</Property>
+      <Property LongName="DMTG.v_t.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="DMTG.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="DMTG.internalInputs" Type="3" SubType="128"><![CDATA[scenario;1==#d_0;6==#v_c;6==#t;1==#gamma;1==#a_max;8==#d_max;8==#jerk_max;8==]]></Property>
+    <Property LongName="DMTG.internalOutputs" Type="3" SubType="128"><![CDATA[v_t;6==;0]]></Property>
+    <Property LongName="DMTG.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="DMTG.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="DMTG.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="DMTG.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="DMTG.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="DMTG.pythonPID" Type="1">4192</ReadOnlyProperty>
+    <Property LongName="DMTG.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="DMTG.useNuitka" Type="0">false</Property>
+    <Property LongName="DMTG.loadingTimeout" Type="1">8000000</Property>
+    <ReadOnlyProperty LongName="DMTG.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DMTG.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="DMTG.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="DMTG.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="DMTG.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\justi\Files\Documents\.EAD RTMaps Code\Python Code\DMTG.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Python Code/DMTG.py]]></Relative></Property>
+    <Property LongName="DMTG.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="DMTG.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="DMTG.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DMTG.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="DMTG.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DMTG.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DMTG.threaded" Type="0">true</Property>
+    <Property LongName="DMTG.priority" Type="1">128</Property>
+    <Property LongName="DMTG.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="g_e_curr_inp" Model="Integer_constants_generator" Version="2.5.1" x="24" y="312" z="0">
+    <Output LongName="g_e_curr_inp.output" Name="output">
+      <Property LongName="g_e_curr_inp.output.subsampling" Type="1">1</Property>
+      <Property LongName="g_e_curr_inp.output.fifosize" Type="1">16</Property>
+      <Property LongName="g_e_curr_inp.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="g_e_curr_inp.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="g_e_curr_inp.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="g_e_curr_inp.vectorSize" Type="1">1</Property>
+    <Property LongName="g_e_curr_inp.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="g_e_curr_inp.value_1" Type="1">10</Property>
+    <Property LongName="g_e_curr_inp.threaded" Type="0">true</Property>
+    <Property LongName="g_e_curr_inp.priority" Type="1">128</Property>
+    <Property LongName="g_e_curr_inp.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="g_e_next_inp" Model="Integer_constants_generator" Version="2.5.1" x="24" y="504" z="0">
+    <Output LongName="g_e_next_inp.output" Name="output">
+      <Property LongName="g_e_next_inp.output.subsampling" Type="1">1</Property>
+      <Property LongName="g_e_next_inp.output.fifosize" Type="1">16</Property>
+      <Property LongName="g_e_next_inp.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="g_e_next_inp.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="g_e_next_inp.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="g_e_next_inp.vectorSize" Type="1">1</Property>
+    <Property LongName="g_e_next_inp.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="g_e_next_inp.value_1" Type="1">20</Property>
+    <Property LongName="g_e_next_inp.threaded" Type="0">true</Property>
+    <Property LongName="g_e_next_inp.priority" Type="1">128</Property>
+    <Property LongName="g_e_next_inp.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="g_s_next_inp" Model="Integer_constants_generator" Version="2.5.1" x="24" y="408" z="0">
+    <Output LongName="g_s_next_inp.output" Name="output">
+      <Property LongName="g_s_next_inp.output.subsampling" Type="1">1</Property>
+      <Property LongName="g_s_next_inp.output.fifosize" Type="1">16</Property>
+      <Property LongName="g_s_next_inp.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="g_s_next_inp.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="g_s_next_inp.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="g_s_next_inp.vectorSize" Type="1">1</Property>
+    <Property LongName="g_s_next_inp.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="g_s_next_inp.value_1" Type="1">15</Property>
+    <Property LongName="g_s_next_inp.threaded" Type="0">true</Property>
+    <Property LongName="g_s_next_inp.priority" Type="1">128</Property>
+    <Property LongName="g_s_next_inp.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="GreenWindowEstimator" Model="PythonBridge" Version="4.5.0" x="240" y="208" z="0">
+    <Input LongName="GreenWindowEstimator.t0" Name="t0">
+      <Property LongName="GreenWindowEstimator.t0.readerType" Type="1">0</Property>
+      <Property LongName="GreenWindowEstimator.t0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GreenWindowEstimator.current_state" Name="current_state">
+      <Property LongName="GreenWindowEstimator.current_state.readerType" Type="1">4</Property>
+      <Property LongName="GreenWindowEstimator.current_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GreenWindowEstimator.g_e_curr" Name="g_e_curr">
+      <Property LongName="GreenWindowEstimator.g_e_curr.readerType" Type="1">4</Property>
+      <Property LongName="GreenWindowEstimator.g_e_curr.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GreenWindowEstimator.g_s_next" Name="g_s_next">
+      <Property LongName="GreenWindowEstimator.g_s_next.readerType" Type="1">4</Property>
+      <Property LongName="GreenWindowEstimator.g_s_next.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GreenWindowEstimator.g_e_next" Name="g_e_next">
+      <Property LongName="GreenWindowEstimator.g_e_next.readerType" Type="1">4</Property>
+      <Property LongName="GreenWindowEstimator.g_e_next.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="GreenWindowEstimator.gamma" Name="gamma">
+      <Property LongName="GreenWindowEstimator.gamma.subsampling" Type="1">1</Property>
+      <Property LongName="GreenWindowEstimator.gamma.fifosize" Type="1">16</Property>
+      <Property LongName="GreenWindowEstimator.gamma.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="GreenWindowEstimator.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="GreenWindowEstimator.internalInputs" Type="3" SubType="128"><![CDATA[t0;6==#current_state;13==#g_e_curr;6==#g_s_next;6==#g_e_next;6==]]></Property>
+    <Property LongName="GreenWindowEstimator.internalOutputs" Type="3" SubType="128"><![CDATA[gamma;1==;0]]></Property>
+    <Property LongName="GreenWindowEstimator.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="GreenWindowEstimator.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="GreenWindowEstimator.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="GreenWindowEstimator.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="GreenWindowEstimator.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="GreenWindowEstimator.pythonPID" Type="1">16132</ReadOnlyProperty>
+    <Property LongName="GreenWindowEstimator.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="GreenWindowEstimator.useNuitka" Type="0">false</Property>
+    <Property LongName="GreenWindowEstimator.loadingTimeout" Type="1">8000000</Property>
+    <ReadOnlyProperty LongName="GreenWindowEstimator.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GreenWindowEstimator.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="GreenWindowEstimator.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="GreenWindowEstimator.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="GreenWindowEstimator.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\justi\Files\Documents\.EAD RTMaps Code\Python Code\GreenWindowEstimator.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Python Code/GreenWindowEstimator.py]]></Relative></Property>
+    <Property LongName="GreenWindowEstimator.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="GreenWindowEstimator.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="GreenWindowEstimator.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GreenWindowEstimator.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="GreenWindowEstimator.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="GreenWindowEstimator.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="GreenWindowEstimator.threaded" Type="0">true</Property>
+    <Property LongName="GreenWindowEstimator.priority" Type="1">128</Property>
+    <Property LongName="GreenWindowEstimator.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="MapMatcher" Model="PythonBridge" Version="4.5.0" x="240" y="352" z="0">
+    <Input LongName="MapMatcher.gps_points" Name="gps_points">
+      <Property LongName="MapMatcher.gps_points.readerType" Type="1">0</Property>
+      <Property LongName="MapMatcher.gps_points.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MapMatcher.road_links" Name="road_links">
+      <Property LongName="MapMatcher.road_links.readerType" Type="1">4</Property>
+      <Property LongName="MapMatcher.road_links.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="MapMatcher.dta" Name="dta">
+      <Property LongName="MapMatcher.dta.subsampling" Type="1">1</Property>
+      <Property LongName="MapMatcher.dta.fifosize" Type="1">16</Property>
+      <Property LongName="MapMatcher.dta.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="MapMatcher.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="MapMatcher.internalInputs" Type="3" SubType="128"><![CDATA[gps_points;1==#road_links;1==]]></Property>
+    <Property LongName="MapMatcher.internalOutputs" Type="3" SubType="128"><![CDATA[dta;6==;0]]></Property>
+    <Property LongName="MapMatcher.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="MapMatcher.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="MapMatcher.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="MapMatcher.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="MapMatcher.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="MapMatcher.pythonPID" Type="1">15920</ReadOnlyProperty>
+    <Property LongName="MapMatcher.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="MapMatcher.useNuitka" Type="0">false</Property>
+    <Property LongName="MapMatcher.loadingTimeout" Type="1">8000000</Property>
+    <ReadOnlyProperty LongName="MapMatcher.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="MapMatcher.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="MapMatcher.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="MapMatcher.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="MapMatcher.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\justi\Files\Documents\.EAD RTMaps Code\Python Code\MapMatcher.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Python Code/MapMatcher.py]]></Relative></Property>
+    <Property LongName="MapMatcher.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="MapMatcher.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="MapMatcher.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="MapMatcher.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="MapMatcher.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="MapMatcher.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="MapMatcher.threaded" Type="0">true</Property>
+    <Property LongName="MapMatcher.priority" Type="1">128</Property>
+    <Property LongName="MapMatcher.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="SystemConstraints" Model="PythonBridge" Version="4.5.0" x="240" y="456" z="0">
+    <Output LongName="SystemConstraints.a_max" Name="a_max">
+      <Property LongName="SystemConstraints.a_max.subsampling" Type="1">1</Property>
+      <Property LongName="SystemConstraints.a_max.fifosize" Type="1">16</Property>
+      <Property LongName="SystemConstraints.a_max.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="SystemConstraints.d_max" Name="d_max">
+      <Property LongName="SystemConstraints.d_max.subsampling" Type="1">1</Property>
+      <Property LongName="SystemConstraints.d_max.fifosize" Type="1">16</Property>
+      <Property LongName="SystemConstraints.d_max.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="SystemConstraints.jerk_max" Name="jerk_max">
+      <Property LongName="SystemConstraints.jerk_max.subsampling" Type="1">1</Property>
+      <Property LongName="SystemConstraints.jerk_max.fifosize" Type="1">16</Property>
+      <Property LongName="SystemConstraints.jerk_max.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="SystemConstraints.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="SystemConstraints.internalInputs" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="SystemConstraints.internalOutputs" Type="3" SubType="128"><![CDATA[a_max;8==;0#d_max;8==;0#jerk_max;8==;0]]></Property>
+    <Property LongName="SystemConstraints.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="SystemConstraints.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="SystemConstraints.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="SystemConstraints.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="SystemConstraints.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="SystemConstraints.pythonPID" Type="1">11804</ReadOnlyProperty>
+    <Property LongName="SystemConstraints.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="SystemConstraints.useNuitka" Type="0">false</Property>
+    <Property LongName="SystemConstraints.loadingTimeout" Type="1">8000000</Property>
+    <ReadOnlyProperty LongName="SystemConstraints.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="SystemConstraints.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="SystemConstraints.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="SystemConstraints.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="SystemConstraints.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\justi\Files\Documents\.EAD RTMaps Code\Python Code\SystemConstraints.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Python Code/SystemConstraints.py]]></Relative></Property>
+    <Property LongName="SystemConstraints.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="SystemConstraints.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="SystemConstraints.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="SystemConstraints.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="SystemConstraints.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="SystemConstraints.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="SystemConstraints.threaded" Type="0">true</Property>
+    <Property LongName="SystemConstraints.priority" Type="1">128</Property>
+    <Property LongName="SystemConstraints.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="t0_inp" Model="Integer_constants_generator" Version="2.5.1" x="24" y="112" z="0">
+    <Output LongName="t0_inp.output" Name="output">
+      <Property LongName="t0_inp.output.subsampling" Type="1">1</Property>
+      <Property LongName="t0_inp.output.fifosize" Type="1">16</Property>
+      <Property LongName="t0_inp.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="t0_inp.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="t0_inp.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="t0_inp.vectorSize" Type="1">1</Property>
+    <Property LongName="t0_inp.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="t0_inp.value_1" Type="1">5</Property>
+    <Property LongName="t0_inp.threaded" Type="0">true</Property>
+    <Property LongName="t0_inp.priority" Type="1">128</Property>
+    <Property LongName="t0_inp.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="v_c_inp" Model="Integer_constants_generator" Version="2.5.1" x="24" y="16" z="0">
+    <Output LongName="v_c_inp.output" Name="output">
+      <Property LongName="v_c_inp.output.subsampling" Type="1">1</Property>
+      <Property LongName="v_c_inp.output.fifosize" Type="1">16</Property>
+      <Property LongName="v_c_inp.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="v_c_inp.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="v_c_inp.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="v_c_inp.vectorSize" Type="1">1</Property>
+    <Property LongName="v_c_inp.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="v_c_inp.value_1" Type="1">40</Property>
+    <Property LongName="v_c_inp.threaded" Type="0">true</Property>
+    <Property LongName="v_c_inp.priority" Type="1">128</Property>
+    <Property LongName="v_c_inp.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="DMTG.v_t" Input="DataViewer_2.input_0"/>
+  <Connection Output="MapMatcher.dta" Input="DMSI.d_0"/>
+  <Connection Output="v_c_inp.output" Input="DMSI.v_c"/>
+  <Connection Output="t0_inp.output" Input="DMSI.t_0"/>
+  <Connection Output="GreenWindowEstimator.gamma" Input="DMSI.gamma"/>
+  <Connection Output="DMSI.scenario" Input="DMTG.scenario"/>
+  <Connection Output="MapMatcher.dta" Input="DMTG.d_0"/>
+  <Connection Output="SystemConstraints.a_max" Input="DMTG.a_max"/>
+  <Connection Output="SystemConstraints.d_max" Input="DMTG.d_max"/>
+  <Connection Output="SystemConstraints.jerk_max" Input="DMTG.jerk_max"/>
+  <Connection Output="t0_inp.output" Input="GreenWindowEstimator.t0"/>
+  <Connection Output="current_state_inp.stringValue" Input="GreenWindowEstimator.current_state"/>
+  <Connection Output="g_e_curr_inp.output" Input="GreenWindowEstimator.g_e_curr"/>
+  <Connection Output="g_s_next_inp.output" Input="GreenWindowEstimator.g_s_next"/>
+  <Connection Output="g_e_next_inp.output" Input="GreenWindowEstimator.g_e_next"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ConnectionShape InstanceName="DataViewer_2.input_0" color="0"/>
+    <ConnectionShape InstanceName="DMSI.d_0" color="0"/>
+    <ConnectionShape InstanceName="DMSI.gamma" color="0"/>
+    <ConnectionShape InstanceName="DMSI.t_0" color="0"/>
+    <ConnectionShape InstanceName="DMSI.v_c" color="0"/>
+    <ConnectionShape InstanceName="DMTG.a_max" color="0"/>
+    <ConnectionShape InstanceName="DMTG.d_0" color="0"/>
+    <ConnectionShape InstanceName="DMTG.d_max" color="0"/>
+    <ConnectionShape InstanceName="DMTG.jerk_max" color="0"/>
+    <ConnectionShape InstanceName="DMTG.scenario" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.current_state" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.g_e_curr" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.g_e_next" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.g_s_next" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.t0" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>

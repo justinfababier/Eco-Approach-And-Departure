@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.11" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="3.5.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_pcap.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_pcap.pck]]></Relative></File>
+    <File Version="4.4.7"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
+    <File Version="1.0.1"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_v2x-main/Package/Windows/RTMaps_V2X.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_v2x-main/Package/Windows/RTMaps_V2X.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="DMSI" Model="PythonBridge" Version="4.4.7" x="1688" y="456" z="0">
+    <Input LongName="DMSI.d_0" Name="d_0">
+      <Property LongName="DMSI.d_0.readerType" Type="1">0</Property>
+      <Property LongName="DMSI.d_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMSI.v_c" Name="v_c">
+      <Property LongName="DMSI.v_c.readerType" Type="1">4</Property>
+      <Property LongName="DMSI.v_c.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMSI.t_0" Name="t_0">
+      <Property LongName="DMSI.t_0.readerType" Type="1">4</Property>
+      <Property LongName="DMSI.t_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMSI.gamma" Name="gamma">
+      <Property LongName="DMSI.gamma.readerType" Type="1">4</Property>
+      <Property LongName="DMSI.gamma.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="DMSI.scenario" Name="scenario">
+      <Property LongName="DMSI.scenario.subsampling" Type="1">1</Property>
+      <Property LongName="DMSI.scenario.fifosize" Type="1">16</Property>
+      <Property LongName="DMSI.scenario.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="DMSI.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="DMSI.internalInputs" Type="3" SubType="128"><![CDATA[d_0;11==#v_c;11==#t_0;11==#gamma;1==]]></Property>
+    <Property LongName="DMSI.internalOutputs" Type="3" SubType="128"><![CDATA[scenario;13==;0]]></Property>
+    <Property LongName="DMSI.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="DMSI.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="DMSI.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="DMSI.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="DMSI.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="DMSI.pythonPID" Type="1">39548</ReadOnlyProperty>
+    <Property LongName="DMSI.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="DMSI.useNuitka" Type="0">false</Property>
+    <ReadOnlyProperty LongName="DMSI.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DMSI.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="DMSI.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="DMSI.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="DMSI.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\hungn\OneDrive - email.ucr.edu\Documents\EcoCAR_RtmapV2x\.EAD RTMaps Code\.EAD RTMaps Code\Python Code\DMSI.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../Python Code/DMSI.py]]></Relative></Property>
+    <Property LongName="DMSI.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="DMSI.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="DMSI.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DMSI.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="DMSI.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DMSI.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DMSI.threaded" Type="0">true</Property>
+    <Property LongName="DMSI.priority" Type="1">128</Property>
+    <Property LongName="DMSI.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="DMTG" Model="PythonBridge" Version="4.4.7" x="1952" y="456" z="0">
+    <Input LongName="DMTG.scenario" Name="scenario">
+      <Property LongName="DMTG.scenario.readerType" Type="1">0</Property>
+      <Property LongName="DMTG.scenario.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.d_0" Name="d_0">
+      <Property LongName="DMTG.d_0.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.d_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.v_c" Name="v_c">
+      <Property LongName="DMTG.v_c.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.v_c.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.t" Name="t">
+      <Property LongName="DMTG.t.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.t.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DMTG.gamma" Name="gamma">
+      <Property LongName="DMTG.gamma.readerType" Type="1">4</Property>
+      <Property LongName="DMTG.gamma.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="DMTG.v_t" Name="v_t">
+      <Property LongName="DMTG.v_t.subsampling" Type="1">1</Property>
+      <Property LongName="DMTG.v_t.fifosize" Type="1">16</Property>
+      <Property LongName="DMTG.v_t.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="DMTG.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="DMTG.internalInputs" Type="3" SubType="128"><![CDATA[scenario;1==#d_0;11==#v_c;11==#t;1==#gamma;1==]]></Property>
+    <Property LongName="DMTG.internalOutputs" Type="3" SubType="128"><![CDATA[v_t;6==;0]]></Property>
+    <Property LongName="DMTG.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="DMTG.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="DMTG.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="DMTG.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="DMTG.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="DMTG.pythonPID" Type="1">35332</ReadOnlyProperty>
+    <Property LongName="DMTG.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="DMTG.useNuitka" Type="0">false</Property>
+    <ReadOnlyProperty LongName="DMTG.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DMTG.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="DMTG.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="DMTG.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="DMTG.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\hungn\OneDrive - email.ucr.edu\Documents\EcoCAR_RtmapV2x\.EAD RTMaps Code\.EAD RTMaps Code\Python Code\DMTG.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../Python Code/DMTG.py]]></Relative></Property>
+    <Property LongName="DMTG.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="DMTG.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="DMTG.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DMTG.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="DMTG.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DMTG.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DMTG.threaded" Type="0">true</Property>
+    <Property LongName="DMTG.priority" Type="1">128</Property>
+    <Property LongName="DMTG.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="GWE" Model="PythonBridge" Version="4.4.7" x="1472" y="208" z="0">
+    <Input LongName="GWE.t0" Name="t0">
+      <Property LongName="GWE.t0.readerType" Type="1">0</Property>
+      <Property LongName="GWE.t0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GWE.current_state" Name="current_state">
+      <Property LongName="GWE.current_state.readerType" Type="1">4</Property>
+      <Property LongName="GWE.current_state.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GWE.g_e_curr" Name="g_e_curr">
+      <Property LongName="GWE.g_e_curr.readerType" Type="1">4</Property>
+      <Property LongName="GWE.g_e_curr.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GWE.g_s_next" Name="g_s_next">
+      <Property LongName="GWE.g_s_next.readerType" Type="1">4</Property>
+      <Property LongName="GWE.g_s_next.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GWE.g_e_next" Name="g_e_next">
+      <Property LongName="GWE.g_e_next.readerType" Type="1">4</Property>
+      <Property LongName="GWE.g_e_next.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="GWE.gamma" Name="gamma">
+      <Property LongName="GWE.gamma.subsampling" Type="1">1</Property>
+      <Property LongName="GWE.gamma.fifosize" Type="1">16</Property>
+      <Property LongName="GWE.gamma.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="GWE.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="GWE.internalInputs" Type="3" SubType="128"><![CDATA[t0;11==#current_state;8==#g_e_curr;11==#g_s_next;11==#g_e_next;11==]]></Property>
+    <Property LongName="GWE.internalOutputs" Type="3" SubType="128"><![CDATA[gamma;1==;0]]></Property>
+    <Property LongName="GWE.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="GWE.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="GWE.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="GWE.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="GWE.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="GWE.pythonPID" Type="1">33908</ReadOnlyProperty>
+    <Property LongName="GWE.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="GWE.useNuitka" Type="0">false</Property>
+    <ReadOnlyProperty LongName="GWE.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GWE.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="GWE.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="GWE.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="GWE.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\hungn\OneDrive - email.ucr.edu\Documents\EcoCAR_RtmapV2x\.EAD RTMaps Code\.EAD RTMaps Code\Python Code\GreenWindowEstimator.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../Python Code/GreenWindowEstimator.py]]></Relative></Property>
+    <Property LongName="GWE.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="GWE.inputsBehavior" Type="4"><![CDATA[2|1|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="GWE.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GWE.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="GWE.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="GWE.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="GWE.threaded" Type="0">true</Property>
+    <Property LongName="GWE.priority" Type="1">128</Property>
+    <Property LongName="GWE.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="IEEE1609dot2Decoder_1" Model="IEEE1609dot2Decoder" Version="1.0.0" x="456" y="104" z="0">
+    <Input LongName="IEEE1609dot2Decoder_1.i_data" Name="i_data">
+      <Property LongName="IEEE1609dot2Decoder_1.i_data.readerType" Type="1">0</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.i_data.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="IEEE1609dot2Decoder_1.status" Name="status">
+      <Property LongName="IEEE1609dot2Decoder_1.status.subsampling" Type="1">1</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.status.fifosize" Type="1">16</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.status.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="IEEE1609dot2Decoder_1.protocolVersion" Name="protocolVersion">
+      <Property LongName="IEEE1609dot2Decoder_1.protocolVersion.subsampling" Type="1">1</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.protocolVersion.fifosize" Type="1">16</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.protocolVersion.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="IEEE1609dot2Decoder_1.o_data" Name="o_data">
+      <Property LongName="IEEE1609dot2Decoder_1.o_data.subsampling" Type="1">1</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.o_data.fifosize" Type="1">16</Property>
+      <Property LongName="IEEE1609dot2Decoder_1.o_data.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="IEEE1609dot2Decoder_1.max_output_data_size" Type="1">1024</Property>
+    <Property LongName="IEEE1609dot2Decoder_1.threaded" Type="0">true</Property>
+    <Property LongName="IEEE1609dot2Decoder_1.priority" Type="1">128</Property>
+    <Property LongName="IEEE1609dot2Decoder_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="J2735_SPaTData_Decoder" Model="J2735Decoder" Version="1.0.1" x="1032" y="192" z="0">
+    <Input LongName="J2735_SPaTData_Decoder.data" Name="data">
+      <Property LongName="J2735_SPaTData_Decoder.data.readerType" Type="1">0</Property>
+      <Property LongName="J2735_SPaTData_Decoder.data.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="J2735_SPaTData_Decoder.status" Name="status">
+      <Property LongName="J2735_SPaTData_Decoder.status.subsampling" Type="1">1</Property>
+      <Property LongName="J2735_SPaTData_Decoder.status.fifosize" Type="1">16</Property>
+      <Property LongName="J2735_SPaTData_Decoder.status.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="J2735_SPaTData_Decoder.message_type" Type="4"><![CDATA[19|3|SAE_J2735_MessageFrame|SAE_J2735_BSM|SAE_J2735_MAP|SAE_J2735_SPAT|SAE_J2735_CommonSafetyRequest|SAE_J2735_EmergencyVehicleAlert|SAE_J2735_IntersectionCollision|SAE_J2735_NMEAcorrections|SAE_J2735_ProbeDataManagement|SAE_J2735_ProbeVehicleData|SAE_J2735_RoadSideAlert|SAE_J2735_RTCMcorrections|SAE_J2735_SignalRequestMessage|SAE_J2735_SignalStatusMessage|SAE_J2735_TravelerInformation|SAE_J2735_PersonalSafetyMessage|SAE_J2735_VehicleSafetyExtensions|SAE_J2735_SpecialVehicleExtensions|SAE_J2735_SupplementalVehicleExtensions]]></Property>
+    <Property LongName="J2735_SPaTData_Decoder.message_template" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="J2735_SPaTData_Decoder.decode_buffer_size" Type="1">16384</Property>
+    <Property LongName="J2735_SPaTData_Decoder.threaded" Type="0">true</Property>
+    <Property LongName="J2735_SPaTData_Decoder.priority" Type="1">128</Property>
+    <Property LongName="J2735_SPaTData_Decoder.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="J2735Decoder_1" Model="J2735Decoder" Version="1.0.1" x="640" y="104" z="0">
+    <Input LongName="J2735Decoder_1.data" Name="data">
+      <Property LongName="J2735Decoder_1.data.readerType" Type="1">0</Property>
+      <Property LongName="J2735Decoder_1.data.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="J2735Decoder_1.status" Name="status">
+      <Property LongName="J2735Decoder_1.status.subsampling" Type="1">1</Property>
+      <Property LongName="J2735Decoder_1.status.fifosize" Type="1">16</Property>
+      <Property LongName="J2735Decoder_1.status.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="J2735Decoder_1.message_type" Type="4"><![CDATA[19|0|SAE_J2735_MessageFrame|SAE_J2735_BSM|SAE_J2735_MAP|SAE_J2735_SPAT|SAE_J2735_CommonSafetyRequest|SAE_J2735_EmergencyVehicleAlert|SAE_J2735_IntersectionCollision|SAE_J2735_NMEAcorrections|SAE_J2735_ProbeDataManagement|SAE_J2735_ProbeVehicleData|SAE_J2735_RoadSideAlert|SAE_J2735_RTCMcorrections|SAE_J2735_SignalRequestMessage|SAE_J2735_SignalStatusMessage|SAE_J2735_TravelerInformation|SAE_J2735_PersonalSafetyMessage|SAE_J2735_VehicleSafetyExtensions|SAE_J2735_SpecialVehicleExtensions|SAE_J2735_SupplementalVehicleExtensions]]></Property>
+    <Property LongName="J2735Decoder_1.message_template" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="J2735Decoder_1.decode_buffer_size" Type="1">16384</Property>
+    <Property LongName="J2735Decoder_1.threaded" Type="0">true</Property>
+    <Property LongName="J2735Decoder_1.priority" Type="1">128</Property>
+    <Property LongName="J2735Decoder_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="MD_viewer" Model="PythonBridge" Version="4.4.7" x="1624" y="120" z="0">
+    <Input LongName="MD_viewer.MAP_i" Name="MAP_i">
+      <Property LongName="MD_viewer.MAP_i.readerType" Type="1">0</Property>
+      <Property LongName="MD_viewer.MAP_i.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MD_viewer.SPAT_i" Name="SPAT_i">
+      <Property LongName="MD_viewer.SPAT_i.readerType" Type="1">4</Property>
+      <Property LongName="MD_viewer.SPAT_i.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MD_viewer.BSM_i" Name="BSM_i">
+      <Property LongName="MD_viewer.BSM_i.readerType" Type="1">4</Property>
+      <Property LongName="MD_viewer.BSM_i.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="MD_viewer.MAP_o" Name="MAP_o">
+      <Property LongName="MD_viewer.MAP_o.subsampling" Type="1">1</Property>
+      <Property LongName="MD_viewer.MAP_o.fifosize" Type="1">16</Property>
+      <Property LongName="MD_viewer.MAP_o.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="MD_viewer.SPAT_o" Name="SPAT_o">
+      <Property LongName="MD_viewer.SPAT_o.subsampling" Type="1">1</Property>
+      <Property LongName="MD_viewer.SPAT_o.fifosize" Type="1">16</Property>
+      <Property LongName="MD_viewer.SPAT_o.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="MD_viewer.BSM_o" Name="BSM_o">
+      <Property LongName="MD_viewer.BSM_o.subsampling" Type="1">1</Property>
+      <Property LongName="MD_viewer.BSM_o.fifosize" Type="1">16</Property>
+      <Property LongName="MD_viewer.BSM_o.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="MD_viewer.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="MD_viewer.internalInputs" Type="3" SubType="128"><![CDATA[MAP_i;3==#SPAT_i;3==#BSM_i;3==]]></Property>
+    <Property LongName="MD_viewer.internalOutputs" Type="3" SubType="128"><![CDATA[MAP_o;13==;0#SPAT_o;13==;0#BSM_o;13==;0]]></Property>
+    <Property LongName="MD_viewer.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="MD_viewer.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="MD_viewer.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="MD_viewer.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="MD_viewer.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="MD_viewer.pythonPID" Type="1">27404</ReadOnlyProperty>
+    <Property LongName="MD_viewer.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="MD_viewer.useNuitka" Type="0">false</Property>
+    <ReadOnlyProperty LongName="MD_viewer.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="MD_viewer.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="MD_viewer.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="MD_viewer.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="MD_viewer.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\hungn\OneDrive - email.ucr.edu\Documents\EcoCAR_RtmapV2x\.EAD RTMaps Code\.EAD RTMaps Code\Python Code\MD_viewer.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../Python Code/MD_viewer.py]]></Relative></Property>
+    <Property LongName="MD_viewer.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="MD_viewer.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="MD_viewer.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="MD_viewer.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="MD_viewer.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="MD_viewer.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="MD_viewer.threaded" Type="0">true</Property>
+    <Property LongName="MD_viewer.priority" Type="1">128</Property>
+    <Property LongName="MD_viewer.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="MessageDispatcher_1" Model="MessageDispatcher" Version="1.0.0" x="840" y="120" z="0">
+    <Input LongName="MessageDispatcher_1.messageId" Name="messageId">
+      <Property LongName="MessageDispatcher_1.messageId.readerType" Type="1">0</Property>
+      <Property LongName="MessageDispatcher_1.messageId.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="MessageDispatcher_1.value" Name="value">
+      <Property LongName="MessageDispatcher_1.value.readerType" Type="1">0</Property>
+      <Property LongName="MessageDispatcher_1.value.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="MessageDispatcher_1.MAP" Name="MAP">
+      <Property LongName="MessageDispatcher_1.MAP.subsampling" Type="1">1</Property>
+      <Property LongName="MessageDispatcher_1.MAP.fifosize" Type="1">16</Property>
+      <Property LongName="MessageDispatcher_1.MAP.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="MessageDispatcher_1.SPAT" Name="SPAT">
+      <Property LongName="MessageDispatcher_1.SPAT.subsampling" Type="1">1</Property>
+      <Property LongName="MessageDispatcher_1.SPAT.fifosize" Type="1">16</Property>
+      <Property LongName="MessageDispatcher_1.SPAT.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="MessageDispatcher_1.BSM" Name="BSM">
+      <Property LongName="MessageDispatcher_1.BSM.subsampling" Type="1">1</Property>
+      <Property LongName="MessageDispatcher_1.BSM.fifosize" Type="1">16</Property>
+      <Property LongName="MessageDispatcher_1.BSM.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="MessageDispatcher_1.mapData" Type="0">true</Property>
+    <Property LongName="MessageDispatcher_1.signalPhaseAndTimingMessage" Type="0">true</Property>
+    <Property LongName="MessageDispatcher_1.basicSafetyMessage" Type="0">true</Property>
+    <Property LongName="MessageDispatcher_1.commonSafetyRequest" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.emergencyVehicleAlert" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.intersectionCollision" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.nmeaCorrections" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.probeDataManagement" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.probeVehicleData" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.roadSideAlert" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.rtcmCorrections" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.signalRequestMessage" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.signalStatusMessage" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.travelerInformation" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.personalSafetyMessage" Type="0">false</Property>
+    <Property LongName="MessageDispatcher_1.threaded" Type="0">true</Property>
+    <Property LongName="MessageDispatcher_1.priority" Type="1">128</Property>
+    <Property LongName="MessageDispatcher_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="pcap_player_1" Model="pcap_player" Version="2.1.0" x="16" y="104" z="0">
+    <Output LongName="pcap_player_1.output" Name="output">
+      <Property LongName="pcap_player_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="pcap_player_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="pcap_player_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="pcap_player_1.endOfFile" Name="endOfFile">
+      <Property LongName="pcap_player_1.endOfFile.subsampling" Type="1">1</Property>
+      <Property LongName="pcap_player_1.endOfFile.fifosize" Type="1">16</Property>
+      <Property LongName="pcap_player_1.endOfFile.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="pcap_player_1.guard_begin" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="pcap_player_1.percentage" Type="2">0</ReadOnlyProperty>
+    <Property LongName="pcap_player_1.pcapFile" Type="3" SubType="16"><![CDATA[C:\Users\hungn\OneDrive - email.ucr.edu\Documents\EcoCAR_RtmapV2x\.EAD RTMaps Code\.EAD RTMaps Code\test_data_captures\map_spat_testlog.pcap]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../test_data_captures/map_spat_testlog.pcap]]></Relative></Property>
+    <Property LongName="pcap_player_1.group_duration" Type="1" SubType="1">10000</Property>
+    <Property LongName="pcap_player_1.packets_per_group" Type="1">50</Property>
+    <Property LongName="pcap_player_1.useQuickFilter" Type="0">true</Property>
+    <Property LongName="pcap_player_1.protocolFilter" Type="4"><![CDATA[4|2||tcp|udp|icmp]]></Property>
+    <Property LongName="pcap_player_1.srcHostFilter" Type="3"><![CDATA[192.168.2.111]]></Property>
+    <Property LongName="pcap_player_1.destHostFilter" Type="3"><![CDATA[]]></Property>
+    <Property LongName="pcap_player_1.srcPortFilter" Type="3"><![CDATA[]]></Property>
+    <Property LongName="pcap_player_1.destPortFilter" Type="3"><![CDATA[]]></Property>
+    <Property LongName="pcap_player_1.guard_end" Type="0" SubType="128">true</Property>
+    <Property LongName="pcap_player_1.replay_mode" Type="4"><![CDATA[3|0|PCAP file timestamps|Immediate|Periodic]]></Property>
+    <Property LongName="pcap_player_1.timestampOffset" Type="4"><![CDATA[2|0|First timestamp in file|None]]></Property>
+    <Property LongName="pcap_player_1.threaded" Type="0">true</Property>
+    <Property LongName="pcap_player_1.priority" Type="1">128</Property>
+    <Property LongName="pcap_player_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="PCAPSplitter_1" Model="PCAPSplitter" Version="2.1.0" x="288" y="104" z="0">
+    <Input LongName="PCAPSplitter_1.input" Name="input">
+      <Property LongName="PCAPSplitter_1.input.readerType" Type="1">0</Property>
+      <Property LongName="PCAPSplitter_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="PCAPSplitter_1.oStream8" Name="oStream8">
+      <Property LongName="PCAPSplitter_1.oStream8.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.oStream8.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.oStream8.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.ipSrc" Name="ipSrc">
+      <Property LongName="PCAPSplitter_1.ipSrc.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.ipSrc.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.ipSrc.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.ipDest" Name="ipDest">
+      <Property LongName="PCAPSplitter_1.ipDest.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.ipDest.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.ipDest.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.protocol" Name="protocol">
+      <Property LongName="PCAPSplitter_1.protocol.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.protocol.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.protocol.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.portSrc" Name="portSrc">
+      <Property LongName="PCAPSplitter_1.portSrc.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.portSrc.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.portSrc.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.portDest" Name="portDest">
+      <Property LongName="PCAPSplitter_1.portDest.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.portDest.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.portDest.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.pktInfo" Name="pktInfo">
+      <Property LongName="PCAPSplitter_1.pktInfo.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.pktInfo.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.pktInfo.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="PCAPSplitter_1.pktTs" Name="pktTs">
+      <Property LongName="PCAPSplitter_1.pktTs.subsampling" Type="1">1</Property>
+      <Property LongName="PCAPSplitter_1.pktTs.fifosize" Type="1">64</Property>
+      <Property LongName="PCAPSplitter_1.pktTs.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="PCAPSplitter_1.linkType" Type="4"><![CDATA[2|0|DLT_EN10MB|DLT_LINUX_SLL]]></Property>
+    <Property LongName="PCAPSplitter_1.fragment_handling" Type="4"><![CDATA[2|1|Reconstruct packets|Forward fragments]]></Property>
+    <Property LongName="PCAPSplitter_1.max_stored_fragments_in_MB" Type="1">2</Property>
+    <Property LongName="PCAPSplitter_1.threaded" Type="0">true</Property>
+    <Property LongName="PCAPSplitter_1.priority" Type="1">128</Property>
+    <Property LongName="PCAPSplitter_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="TextViewer_1" Model="TextViewer" Version="2.0.7" x="1816" y="120" z="0">
+    <Input LongName="TextViewer_1.input" Name="input">
+      <Property LongName="TextViewer_1.input.readerType" Type="1">0</Property>
+      <Property LongName="TextViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="TextViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="TextViewer_1.run" Type="0">true</Property>
+    <Property LongName="TextViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="TextViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="TextViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="TextViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="TextViewer_1.x" Type="1">125</Property>
+    <Property LongName="TextViewer_1.y" Type="1">249</Property>
+    <Property LongName="TextViewer_1.width" Type="1">570</Property>
+    <Property LongName="TextViewer_1.height" Type="1">317</Property>
+    <Property LongName="TextViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.background_color" Type="1" SubType="4">0</Property>
+    <Property LongName="TextViewer_1.font_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="TextViewer_1.maximumBlockCount" Type="1">0</Property>
+    <Property LongName="TextViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="TextViewer_1.appendLineFeedForNewData" Type="0">true</Property>
+    <Property LongName="TextViewer_1.fontSize" Type="1">10</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="TextViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="TextViewer_1.priority" Type="1">128</Property>
+    <Property LongName="TextViewer_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Connection Output="GWE.gamma" Input="DMSI.gamma"/>
+  <Connection Output="DMSI.scenario" Input="DMTG.scenario"/>
+  <Connection Output="GWE.gamma" Input="DMTG.gamma"/>
+  <Connection Output="PCAPSplitter_1.oStream8" Input="IEEE1609dot2Decoder_1.i_data"/>
+  <Connection Output="MessageDispatcher_1.SPAT" Input="J2735_SPaTData_Decoder.data"/>
+  <Connection Output="IEEE1609dot2Decoder_1.o_data" Input="J2735Decoder_1.data"/>
+  <Connection Output="MessageDispatcher_1.SPAT" Input="MD_viewer.SPAT_i"/>
+  <Connection Output="pcap_player_1.output" Input="PCAPSplitter_1.input"/>
+  <Connection Output="MD_viewer.MAP_o" Input="TextViewer_1.input"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="DataViewer_3_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="DataViewer_Node_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="IEEE1609dot2Decoder_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="J2735_SPaTData_Decoder_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="J2735Decoder_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="MessageDispatcher_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="pcap_player_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="PCAPSplitter_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="PythonBridge_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="DataViewer_1.input_3" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_4" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_5" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_6" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_2" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_3" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_4" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_5" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_6" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_7" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_8" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_9" color="0"/>
+    <ConnectionShape InstanceName="DMSI.d_0" color="0"/>
+    <ConnectionShape InstanceName="DMSI.gamma" color="0"/>
+    <ConnectionShape InstanceName="DMTG.a_max" color="0"/>
+    <ConnectionShape InstanceName="DMTG.d_0" color="0"/>
+    <ConnectionShape InstanceName="DMTG.d_max" color="0"/>
+    <ConnectionShape InstanceName="DMTG.gamma" color="0"/>
+    <ConnectionShape InstanceName="DMTG.jerk_max" color="0"/>
+    <ConnectionShape InstanceName="DMTG.scenario" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.current_state" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.g_e_curr" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.g_e_next" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.g_s_next" color="0"/>
+    <ConnectionShape InstanceName="GreenWindowEstimator.t0" color="0"/>
+    <ConnectionShape InstanceName="GWE.current_state" color="0"/>
+    <ConnectionShape InstanceName="GWE.g_e_curr" color="0"/>
+    <ConnectionShape InstanceName="GWE.g_e_next" color="0"/>
+    <ConnectionShape InstanceName="GWE.g_s_next" color="0"/>
+    <ConnectionShape InstanceName="GWE.t0" color="0"/>
+    <ConnectionShape InstanceName="IEEE1609dot2Decoder_1.i_data" color="0"/>
+    <ConnectionShape InstanceName="J2735_SPaTData_Decoder.data" color="0"/>
+    <ConnectionShape InstanceName="J2735Decoder_1.data" color="0"/>
+    <ConnectionShape InstanceName="J2735Decoder_4.data" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.end_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.end_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_directionalUse" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_1_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_1_Node_2_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_directionalUse" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_1_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_2_Node_2_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_directionalUse" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_Node_1_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_Node_1_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_Node_2_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.Intersection_1_Lane_3_Node_2_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.latitude" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.latitude_gps" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.latitude_refPoint" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.longitude" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.longitude_gps" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.longitude_refPoint" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.start_delta_x" color="0"/>
+    <ConnectionShape InstanceName="MapMatcher.start_delta_y" color="0"/>
+    <ConnectionShape InstanceName="MD_viewer.SPAT_i" color="0"/>
+    <ConnectionShape InstanceName="MessageDispatcher_1.messageId" color="0"/>
+    <ConnectionShape InstanceName="MessageDispatcher_1.value" color="0"/>
+    <ConnectionShape InstanceName="PCAPSplitter_1.input" color="0"/>
+    <ConnectionShape InstanceName="PythonBridge_1.MAP_i" color="0"/>
+    <ConnectionShape InstanceName="Splitter_1.input" color="0"/>
+    <ConnectionShape InstanceName="Splitter_2.input" color="0"/>
+    <ConnectionShape InstanceName="TextViewer_1.input" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>
