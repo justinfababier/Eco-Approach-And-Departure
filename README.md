@@ -193,3 +193,7 @@ This project’s algorithm design and implementation are partially based on the 
 A copy of this paper is included in the repository folder for reference: `GlidePath_Eco-Friendly_Automated_Approach_and_Departure_at_Signalized_Intersections.pdf`
 
 Please refer to this document for theoretical background and trajectory planning methods including scenario classification and profile generation.
+
+## Additional Notes
+
+This Eco-Approach and Departure application code was developed as part of Micheal Dominguez, Justin Fababier, Matthew Henson, and Hung Nguyen's participation within the University of California, Riverside EcoCAR organization.
